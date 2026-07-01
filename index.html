@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Objetos JavaScript</h1>
+    <p>Um objeto JavaScript é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e
+        um valor. O valor de uma propriedade pode ser uma função, que é então considerada um métrodo do objeto.</p>
+    <p>Os objetos JvaScript são usados para armazenar dados e funcionalidades relacionadas. Eles podem ser criados
+        usando a sintaxe de objeto literal, a função construtora ou a classe.</p>
+
+    <p>Exemplo de Objeto Literal:</p>
+    <pre><code>const pessoa = {
+        nome: "João";
+        idade: 30;
+        saudacao: function() {
+            console.log("Olá, meu nome é" + this.nome);
+    }
+}
+    </code></pre>
+
+    <script>
+        const pessoa = {
+            nome: "João";
+            idade: 30;
+            saudacao: function () {
+                console.log("Olá, meu nome é" + this.nome);
+            }
+        };
+
+        pessoa.saudacao(); //Chama o método saudacao do objeto pessoa
+    </script>
+</body>
+
+</html>
