@@ -34,7 +34,15 @@
         };
 
         pessoa.saudacao(); //Chama o método saudacao do objeto pessoa
+
+        const flor = {
+            tipo: "Rosa",
+            cor: "Vermelha",
+            exibirInfo: function () {
+                console.log("A flor é do tipo " + this.tipo + " e tem a cor " + this.cor);
+            }
+        };
+        flor.exibirInfo(); //Chama o método exibirInfo do objeto flor
     </script>
 </body>
-
 </html>
